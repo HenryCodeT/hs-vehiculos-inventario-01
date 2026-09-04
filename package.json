@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "next dev --turbo",
     "build": "next build",
+    "postinstall": "node scripts/patch-prisma-dev.js",
     "start": "next start",
     "lint": "next lint",
     "prettier": "prettier --write .",
@@ -47,11 +48,6 @@
     "tailwindcss": "^4.1.18",
     "xlsx": "^0.18.5",
     "zod": "^4.3.6"
-  },
-  "pnpm": {
-    "overrides": {
-      "zeptomatch": "1.0.1"
-    }
   },
   "devDependencies": {
     "@types/node": "^20.12.13",
